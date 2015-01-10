@@ -1,0 +1,160 @@
+\hypertarget{group___base___h_a_l___interface}{\section{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}
+\label{group___base___h_a_l___interface}\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}
+}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{group___base___h_a_l___interface_gafff60314f6cfca2764c81a05e4e4fb45}{tch\+\_\+lplvl} \{ \hyperlink{group___base___h_a_l___interface_ggafff60314f6cfca2764c81a05e4e4fb45a1a4333aa3688f64c29a727e438e71c93}{L\+P\+\_\+\+L\+E\+V\+E\+L0} = ((uint8\+\_\+t) 0), 
+\hyperlink{group___base___h_a_l___interface_ggafff60314f6cfca2764c81a05e4e4fb45a6f509976d66ef467eef416cdb8b96df5}{L\+P\+\_\+\+L\+E\+V\+E\+L1} = ((uint8\+\_\+t) 1), 
+\hyperlink{group___base___h_a_l___interface_ggafff60314f6cfca2764c81a05e4e4fb45acc47fd7af8a7daaf49270756b185a2b2}{L\+P\+\_\+\+L\+E\+V\+E\+L2} = ((uint8\+\_\+t) 2)
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___base___h_a_l___interface_ga30c39bad73b964910fc1da590532ba0d}{tch\+\_\+hal\+\_\+enable\+Systick} ()
+\begin{DoxyCompactList}\small\item\em Enable system tick timer. \end{DoxyCompactList}\item 
+void \hyperlink{group___base___h_a_l___interface_ga4a8a12649008359835ffe3ea13231636}{tch\+\_\+hal\+\_\+disable\+Systick} ()
+\begin{DoxyCompactList}\small\item\em Disable system tick timer. \end{DoxyCompactList}\item 
+void \hyperlink{group___base___h_a_l___interface_gac486d5f7e4f57a0e0613c2e3d5c82d27}{tch\+\_\+hal\+\_\+set\+Sleep\+Mode} (\hyperlink{group___base___h_a_l___interface_gafff60314f6cfca2764c81a05e4e4fb45}{tch\+\_\+lplvl} lplvl)
+\begin{DoxyCompactList}\small\item\em set current low power mode \end{DoxyCompactList}\item 
+void \hyperlink{group___base___h_a_l___interface_ga05f1af4a803137561ea0eab48ec1b4ce}{tch\+\_\+hal\+\_\+enter\+Sleep\+Mode} ()
+\begin{DoxyCompactList}\small\item\em Allow system to enter sleep mode. \end{DoxyCompactList}\item 
+void \hyperlink{group___base___h_a_l___interface_ga04dd1b9352864389bda0b95b21503825}{tch\+\_\+hal\+\_\+suspend\+Sys\+Clock} ()
+\begin{DoxyCompactList}\small\item\em Suspend system core clock. \end{DoxyCompactList}\item 
+void \hyperlink{group___base___h_a_l___interface_ga706cac4d6e7ae23025d6833d39156882}{tch\+\_\+hal\+\_\+resume\+Sys\+Clock} ()
+\begin{DoxyCompactList}\small\item\em Resume system core clock. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tch\+\_\+lld\+\_\+rtc $\ast$ \hyperlink{group___base___h_a_l___interface_ga1bc8ee9a981f8c5a20c70f715341c5b4}{tch\+\_\+rtc}
+\item 
+\hyperlink{structtch__lld__dma}{tch\+\_\+lld\+\_\+dma} $\ast$ \hyperlink{group___base___h_a_l___interface_ga1b84cc3423ad18d5cb1fa7b47228c8c6}{tch\+\_\+dma}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{group___base___h_a_l___interface_gafff60314f6cfca2764c81a05e4e4fb45}{\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}!tch\+\_\+lplvl@{tch\+\_\+lplvl}}
+\index{tch\+\_\+lplvl@{tch\+\_\+lplvl}!Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}
+\subsubsection[{tch\+\_\+lplvl}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tch\+\_\+lplvl}}}\label{group___base___h_a_l___interface_gafff60314f6cfca2764c81a05e4e4fb45}
+An enum for defining low power level \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\+P\+\_\+\+L\+E\+V\+E\+L0@{L\+P\+\_\+\+L\+E\+V\+E\+L0}!Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}!L\+P\+\_\+\+L\+E\+V\+E\+L0@{L\+P\+\_\+\+L\+E\+V\+E\+L0}}\item[{\em 
+\hypertarget{group___base___h_a_l___interface_ggafff60314f6cfca2764c81a05e4e4fb45a1a4333aa3688f64c29a727e438e71c93}{L\+P\+\_\+\+L\+E\+V\+E\+L0}\label{group___base___h_a_l___interface_ggafff60314f6cfca2764c81a05e4e4fb45a1a4333aa3688f64c29a727e438e71c93}
+}]C\+P\+U Idle \+: C\+P\+U clock source is gated \index{L\+P\+\_\+\+L\+E\+V\+E\+L1@{L\+P\+\_\+\+L\+E\+V\+E\+L1}!Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}!L\+P\+\_\+\+L\+E\+V\+E\+L1@{L\+P\+\_\+\+L\+E\+V\+E\+L1}}\item[{\em 
+\hypertarget{group___base___h_a_l___interface_ggafff60314f6cfca2764c81a05e4e4fb45a6f509976d66ef467eef416cdb8b96df5}{L\+P\+\_\+\+L\+E\+V\+E\+L1}\label{group___base___h_a_l___interface_ggafff60314f6cfca2764c81a05e4e4fb45a6f509976d66ef467eef416cdb8b96df5}
+}]C\+P\+U Sleep \+: C\+P\+U clock is turned off, contents in S\+R\+A\+M are kept \index{L\+P\+\_\+\+L\+E\+V\+E\+L2@{L\+P\+\_\+\+L\+E\+V\+E\+L2}!Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}!L\+P\+\_\+\+L\+E\+V\+E\+L2@{L\+P\+\_\+\+L\+E\+V\+E\+L2}}\item[{\em 
+\hypertarget{group___base___h_a_l___interface_ggafff60314f6cfca2764c81a05e4e4fb45acc47fd7af8a7daaf49270756b185a2b2}{L\+P\+\_\+\+L\+E\+V\+E\+L2}\label{group___base___h_a_l___interface_ggafff60314f6cfca2764c81a05e4e4fb45acc47fd7af8a7daaf49270756b185a2b2}
+}]C\+P\+U Deep Sleep \+: C\+P\+U clock is turned off, contents in S\+R\+A\+M are lost \end{description}
+\end{Desc}
+
+
+Definition at line 37 of file tch\+\_\+hal.\+h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{group___base___h_a_l___interface_ga4a8a12649008359835ffe3ea13231636}{\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}!tch\+\_\+hal\+\_\+disable\+Systick@{tch\+\_\+hal\+\_\+disable\+Systick}}
+\index{tch\+\_\+hal\+\_\+disable\+Systick@{tch\+\_\+hal\+\_\+disable\+Systick}!Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}
+\subsubsection[{tch\+\_\+hal\+\_\+disable\+Systick}]{\setlength{\rightskip}{0pt plus 5cm}void tch\+\_\+hal\+\_\+disable\+Systick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___base___h_a_l___interface_ga4a8a12649008359835ffe3ea13231636}
+
+
+Disable system tick timer. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___base___h_a_l___interface_ga30c39bad73b964910fc1da590532ba0d}{tch\+\_\+hal\+\_\+enable\+Systick}
+\end{DoxySeeAlso}
+this function would be invoked from kernel to allow system to enter sleep mode \hypertarget{group___base___h_a_l___interface_ga30c39bad73b964910fc1da590532ba0d}{\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}!tch\+\_\+hal\+\_\+enable\+Systick@{tch\+\_\+hal\+\_\+enable\+Systick}}
+\index{tch\+\_\+hal\+\_\+enable\+Systick@{tch\+\_\+hal\+\_\+enable\+Systick}!Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}
+\subsubsection[{tch\+\_\+hal\+\_\+enable\+Systick}]{\setlength{\rightskip}{0pt plus 5cm}void tch\+\_\+hal\+\_\+enable\+Systick (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___base___h_a_l___interface_ga30c39bad73b964910fc1da590532ba0d}
+
+
+Enable system tick timer. 
+
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___base___h_a_l___interface_ga4a8a12649008359835ffe3ea13231636}{tch\+\_\+hal\+\_\+disable\+Systick}
+\end{DoxySeeAlso}
+this function would be invoked in the initialization stage of system \hypertarget{group___base___h_a_l___interface_ga05f1af4a803137561ea0eab48ec1b4ce}{\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}!tch\+\_\+hal\+\_\+enter\+Sleep\+Mode@{tch\+\_\+hal\+\_\+enter\+Sleep\+Mode}}
+\index{tch\+\_\+hal\+\_\+enter\+Sleep\+Mode@{tch\+\_\+hal\+\_\+enter\+Sleep\+Mode}!Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}
+\subsubsection[{tch\+\_\+hal\+\_\+enter\+Sleep\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void tch\+\_\+hal\+\_\+enter\+Sleep\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___base___h_a_l___interface_ga05f1af4a803137561ea0eab48ec1b4ce}
+
+
+Allow system to enter sleep mode. 
+
+this function is invoked from kernel to allow system to go into low power mode. \hypertarget{group___base___h_a_l___interface_ga706cac4d6e7ae23025d6833d39156882}{\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}!tch\+\_\+hal\+\_\+resume\+Sys\+Clock@{tch\+\_\+hal\+\_\+resume\+Sys\+Clock}}
+\index{tch\+\_\+hal\+\_\+resume\+Sys\+Clock@{tch\+\_\+hal\+\_\+resume\+Sys\+Clock}!Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}
+\subsubsection[{tch\+\_\+hal\+\_\+resume\+Sys\+Clock}]{\setlength{\rightskip}{0pt plus 5cm}void tch\+\_\+hal\+\_\+resume\+Sys\+Clock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___base___h_a_l___interface_ga706cac4d6e7ae23025d6833d39156882}
+
+
+Resume system core clock. 
+
+this function is invoked from kernel when cpu is waken-\/up from sleep (low power mode) \begin{DoxySeeAlso}{See also}
+\hyperlink{group___base___h_a_l___interface_ga04dd1b9352864389bda0b95b21503825}{tch\+\_\+hal\+\_\+suspend\+Sys\+Clock} 
+\end{DoxySeeAlso}
+\hypertarget{group___base___h_a_l___interface_gac486d5f7e4f57a0e0613c2e3d5c82d27}{\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}!tch\+\_\+hal\+\_\+set\+Sleep\+Mode@{tch\+\_\+hal\+\_\+set\+Sleep\+Mode}}
+\index{tch\+\_\+hal\+\_\+set\+Sleep\+Mode@{tch\+\_\+hal\+\_\+set\+Sleep\+Mode}!Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}
+\subsubsection[{tch\+\_\+hal\+\_\+set\+Sleep\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void tch\+\_\+hal\+\_\+set\+Sleep\+Mode (
+\begin{DoxyParamCaption}
+\item[{{\bf tch\+\_\+lplvl}}]{lplvl}
+\end{DoxyParamCaption}
+)}}\label{group___base___h_a_l___interface_gac486d5f7e4f57a0e0613c2e3d5c82d27}
+
+
+set current low power mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lplvl} & new low-\/power level \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\hyperlink{group___base___h_a_l___interface_gafff60314f6cfca2764c81a05e4e4fb45}{tch\+\_\+lplvl}
+\end{DoxySeeAlso}
+this function is invoked from kernel to change system low power level \hypertarget{group___base___h_a_l___interface_ga04dd1b9352864389bda0b95b21503825}{\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}!tch\+\_\+hal\+\_\+suspend\+Sys\+Clock@{tch\+\_\+hal\+\_\+suspend\+Sys\+Clock}}
+\index{tch\+\_\+hal\+\_\+suspend\+Sys\+Clock@{tch\+\_\+hal\+\_\+suspend\+Sys\+Clock}!Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}
+\subsubsection[{tch\+\_\+hal\+\_\+suspend\+Sys\+Clock}]{\setlength{\rightskip}{0pt plus 5cm}void tch\+\_\+hal\+\_\+suspend\+Sys\+Clock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{group___base___h_a_l___interface_ga04dd1b9352864389bda0b95b21503825}
+
+
+Suspend system core clock. 
+
+this function is invoked from kernel when main clock should be turned off \begin{DoxySeeAlso}{See also}
+\hyperlink{group___base___h_a_l___interface_ga706cac4d6e7ae23025d6833d39156882}{tch\+\_\+hal\+\_\+resume\+Sys\+Clock} 
+\end{DoxySeeAlso}
+
+
+\subsection{Variable Documentation}
+\hypertarget{group___base___h_a_l___interface_ga1b84cc3423ad18d5cb1fa7b47228c8c6}{\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}!tch\+\_\+dma@{tch\+\_\+dma}}
+\index{tch\+\_\+dma@{tch\+\_\+dma}!Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}
+\subsubsection[{tch\+\_\+dma}]{\setlength{\rightskip}{0pt plus 5cm}tch\+\_\+dma}}\label{group___base___h_a_l___interface_ga1b84cc3423ad18d5cb1fa7b47228c8c6}
+D\+M\+A H\+A\+L Object
+
+D\+M\+A H\+A\+L Object, which is not directly accessible to user program. it's been recommended that D\+M\+A is accessed by another H\+A\+L Interface \hypertarget{group___base___h_a_l___interface_ga1bc8ee9a981f8c5a20c70f715341c5b4}{\index{Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}!tch\+\_\+rtc@{tch\+\_\+rtc}}
+\index{tch\+\_\+rtc@{tch\+\_\+rtc}!Base\+\_\+\+H\+A\+L\+\_\+\+Interface@{Base\+\_\+\+H\+A\+L\+\_\+\+Interface}}
+\subsubsection[{tch\+\_\+rtc}]{\setlength{\rightskip}{0pt plus 5cm}tch\+\_\+rtc}}\label{group___base___h_a_l___interface_ga1bc8ee9a981f8c5a20c70f715341c5b4}
+R\+T\+C H\+A\+L Object
+
+R\+T\+C H\+A\+L Object, which is not directly accessible to user program. R\+T\+C is abstracted to System Timer, which keeps track of real time information of system and also deals with timed scheduling of task 

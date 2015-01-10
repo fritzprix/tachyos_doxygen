@@ -1,0 +1,9 @@
+\begin{DoxyCopyright}{Copyright}
+Copyright (C) 2014-\/2015 doowoong,lee All rights reserved. 
+\end{DoxyCopyright}
+\hypertarget{index_about_sec}{}\section{About Tachyos}\label{index_about_sec}
+Tachyos is a R\+T\+O\+S based on Microkernel architecture. Its motivation is that provides simplicity to user (even without any programming background) so that any idea or concept can be prototyped easily but without any constraints in performance, stability and power efficiency. For this motivation, all the base A\+P\+Is (Kernel \& H\+A\+L) are thread-\/safe and I/\+O operation performed under the H\+A\+L is synchronous to program context(which means to be blocking).
+
+Tachyos Kernel is small in its binary size and memory footprint(Kernel 10\+K\+B R\+O\+M / 2\+K\+B R\+A\+M) though, it includes all essential kernel components like multi-\/threading, synchronization, communication and also supports some of P\+O\+S\+I\+X api used frequently in development.\hypertarget{index_feat_sec}{}\section{Detailed features}\label{index_feat_sec}
+\begin{DoxyItemize}
+\item {\bfseries Unlimited multi-\/threading} (only limited by memory) \item {\bfseries Multi-\/\+Level Power Mode and Sleep A\+P\+I for low power application} {\ttfamily kernel} can make decision whether to sleep in low power or wait in C\+P\+U idle by monitoring tasks \item {\bfseries P\+O\+S\+I\+X friendly} (provides minimal set of P\+O\+S\+I\+X) \item {\bfseries Provides Fragmentation-\/\+Free Dynamic Allocation /wo M\+M\+U} \item Thread Synchronization (Mutex, Semaphore, Condition Variable) \item Thread-\/\+Thread,I\+S\+R Communication (Message\+Q , Mail\+Q) \end{DoxyItemize}

@@ -1,0 +1,146 @@
+\hypertarget{group___a_p_i}{\section{A\+P\+I}
+\label{group___a_p_i}\index{A\+P\+I@{A\+P\+I}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct__tch__thread__ix__t}{\+\_\+tch\+\_\+thread\+\_\+ix\+\_\+t}
+\item 
+struct \hyperlink{struct__tch__condvar__ix__t}{\+\_\+tch\+\_\+condvar\+\_\+ix\+\_\+t}
+\begin{DoxyCompactList}\small\item\em posix-\/like condition variable A\+P\+I struct \end{DoxyCompactList}\item 
+struct \hyperlink{struct__tch__msgque__ix__t}{\+\_\+tch\+\_\+msgque\+\_\+ix\+\_\+t}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___a_p_i_ga9eb9a7a797a42e4b55eb171ecc609ddb}{os\+Wait\+Forever}~0x\+F\+F\+F\+F\+F\+F\+F\+F
+\begin{DoxyCompactList}\small\item\em wait forever timeout value \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tch\+\_\+thread\+Id($\ast$ \hyperlink{group___a_p_i_ga3ac33307df56ca2683c30a7055984a17}{\+\_\+tch\+\_\+thread\+\_\+ix\+\_\+t\+::create} )(tch\+\_\+thread\+Cfg $\ast$cfg, void $\ast$arg)
+\item 
+tch\+Status($\ast$ \hyperlink{group___a_p_i_ga5daef7eb8faaa43d6a3c136aa0af356d}{\+\_\+tch\+\_\+thread\+\_\+ix\+\_\+t\+::start} )(tch\+\_\+thread\+Id thread)
+\item 
+tch\+\_\+condv\+Id($\ast$ \hyperlink{group___a_p_i_ga4baf0cb2e2052176f805437c9d226b56}{\+\_\+tch\+\_\+condvar\+\_\+ix\+\_\+t\+::create} )()
+\begin{DoxyCompactList}\small\item\em create posix-\/like condition variable \end{DoxyCompactList}\item 
+tch\+Status($\ast$ \hyperlink{group___a_p_i_ga4a12ede67ac36e7ce4e521144dd0c773}{\+\_\+tch\+\_\+condvar\+\_\+ix\+\_\+t\+::wait} )(tch\+\_\+condv\+Id condv, tch\+\_\+mtx\+Id lock, uint32\+\_\+t timeout)
+\begin{DoxyCompactList}\small\item\em wait on condition variable with unlocking mutex \end{DoxyCompactList}\item 
+tch\+\_\+msgq\+Id($\ast$ \hyperlink{group___a_p_i_gacd7fbe11975c8e0b1a93fe399aed2ee0}{\+\_\+tch\+\_\+msgque\+\_\+ix\+\_\+t\+::create} )(uint32\+\_\+t len)
+\item 
+tch\+Status($\ast$ \hyperlink{group___a_p_i_ga995b80b91503a51429073f1c7b18baba}{\+\_\+tch\+\_\+msgque\+\_\+ix\+\_\+t\+::put} )(tch\+\_\+msgq\+Id, uint32\+\_\+t msg, uint32\+\_\+t millisec)
+\item 
+tch\+Event($\ast$ \hyperlink{group___a_p_i_gae5f29b1432e00abd819c419e351f6f0b}{\+\_\+tch\+\_\+msgque\+\_\+ix\+\_\+t\+::get} )(tch\+\_\+msgq\+Id, uint32\+\_\+t millisec)
+\item 
+\hypertarget{group___a_p_i_gad72012110f051f2e783b3f7fd01178ad}{tch\+Status($\ast$ \hyperlink{group___a_p_i_gad72012110f051f2e783b3f7fd01178ad}{\+\_\+tch\+\_\+msgque\+\_\+ix\+\_\+t\+::destroy} )(tch\+\_\+msgq\+Id)}\label{group___a_p_i_gad72012110f051f2e783b3f7fd01178ad}
+
+\begin{DoxyCompactList}\small\item\em destroy msg queue \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group___a_p_i_ga9eb9a7a797a42e4b55eb171ecc609ddb}{\index{A\+P\+I@{A\+P\+I}!os\+Wait\+Forever@{os\+Wait\+Forever}}
+\index{os\+Wait\+Forever@{os\+Wait\+Forever}!A\+P\+I@{A\+P\+I}}
+\subsubsection[{os\+Wait\+Forever}]{\setlength{\rightskip}{0pt plus 5cm}\#define os\+Wait\+Forever~0x\+F\+F\+F\+F\+F\+F\+F\+F}}\label{group___a_p_i_ga9eb9a7a797a42e4b55eb171ecc609ddb}
+
+
+wait forever timeout value 
+
+\begin{DoxyNote}{Note}
+M\+U\+S\+T R\+E\+M\+A\+I\+N U\+N\+C\+H\+A\+N\+G\+E\+D\+: {\bfseries os\+Wait\+Forever} shall be consistent in every C\+M\+S\+I\+S-\/\+R\+T\+O\+S. 
+\end{DoxyNote}
+
+
+Definition at line 71 of file tch.\+h.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{group___a_p_i_ga3ac33307df56ca2683c30a7055984a17}{\index{A\+P\+I@{A\+P\+I}!create@{create}}
+\index{create@{create}!A\+P\+I@{A\+P\+I}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}tch\+\_\+thread\+Id($\ast$ \+\_\+tch\+\_\+thread\+\_\+ix\+\_\+t\+::create)(tch\+\_\+thread\+Cfg $\ast$cfg, void $\ast$arg)}}\label{group___a_p_i_ga3ac33307df56ca2683c30a7055984a17}
+Create Thread Object 
+
+Definition at line 90 of file tch.\+h.
+
+\hypertarget{group___a_p_i_ga4baf0cb2e2052176f805437c9d226b56}{\index{A\+P\+I@{A\+P\+I}!create@{create}}
+\index{create@{create}!A\+P\+I@{A\+P\+I}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}tch\+\_\+condv\+Id($\ast$ \+\_\+tch\+\_\+condvar\+\_\+ix\+\_\+t\+::create)()}}\label{group___a_p_i_ga4baf0cb2e2052176f805437c9d226b56}
+
+
+create posix-\/like condition variable 
+
+\begin{DoxyReturn}{Returns}
+initiated tch\+\_\+condv\+Id 
+\end{DoxyReturn}
+
+
+Definition at line 147 of file tch.\+h.
+
+\hypertarget{group___a_p_i_gacd7fbe11975c8e0b1a93fe399aed2ee0}{\index{A\+P\+I@{A\+P\+I}!create@{create}}
+\index{create@{create}!A\+P\+I@{A\+P\+I}}
+\subsubsection[{create}]{\setlength{\rightskip}{0pt plus 5cm}tch\+\_\+msgq\+Id($\ast$ \+\_\+tch\+\_\+msgque\+\_\+ix\+\_\+t\+::create)(uint32\+\_\+t len)}}\label{group___a_p_i_gacd7fbe11975c8e0b1a93fe399aed2ee0}
+Create and initiate Message Queue instance \subsubsection*{Note \+: In C\+M\+S\+I\+S, this function actually has one more arguement, which is thread. however it is pointless}
+
+because there isn't any operation which is dedicated to a given single thread
+
+message queue definition \begin{DoxyReturn}{Returns}
+queue I\+D 
+\end{DoxyReturn}
+
+
+Definition at line 184 of file tch.\+h.
+
+\hypertarget{group___a_p_i_gae5f29b1432e00abd819c419e351f6f0b}{\index{A\+P\+I@{A\+P\+I}!get@{get}}
+\index{get@{get}!A\+P\+I@{A\+P\+I}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}tch\+Event($\ast$ \+\_\+tch\+\_\+msgque\+\_\+ix\+\_\+t\+::get)(tch\+\_\+msgq\+Id, uint32\+\_\+t millisec)}}\label{group___a_p_i_gae5f29b1432e00abd819c419e351f6f0b}
+Get a Message or Wait for a Message from a Queue \subsubsection*{Note \+: In I\+S\+R Mode, timeout is forced to 0 and execution is not blocked.}
+
+message queue id  timeout in millisecond \begin{DoxyReturn}{Returns}
+os\+O\+K\+: no message is available in the queue and no timeout was specified. os\+Event\+Timeout\+: no message has arrived during the given timeout period. os\+Event\+Message\+: message received, value.\+p contains the pointer to message. os\+Error\+Parameter\+: a parameter is invalid or outside of a permitted range. 
+\end{DoxyReturn}
+
+
+Definition at line 211 of file tch.\+h.
+
+\hypertarget{group___a_p_i_ga995b80b91503a51429073f1c7b18baba}{\index{A\+P\+I@{A\+P\+I}!put@{put}}
+\index{put@{put}!A\+P\+I@{A\+P\+I}}
+\subsubsection[{put}]{\setlength{\rightskip}{0pt plus 5cm}tch\+Status($\ast$ \+\_\+tch\+\_\+msgque\+\_\+ix\+\_\+t\+::put)(tch\+\_\+msgq\+Id, uint32\+\_\+t msg, uint32\+\_\+t millisec)}}\label{group___a_p_i_ga995b80b91503a51429073f1c7b18baba}
+put message in the message queue (for producer side) \subsubsection*{Note \+: In I\+S\+R Mode, timeout is forced to 0 and execution is not blocked.}
+
+message queue id  msg to send  timeout in millisecond \begin{DoxyReturn}{Returns}
+os\+O\+K \+: the message is put into the queue. os\+Error\+Resource \+: no memory in the queue was available. os\+Error\+Timeout\+Resource \+: no memory in the queue was available during the given time limit. os\+Error\+Parameter \+: a parameter is invalid or outside of a permitted 
+\end{DoxyReturn}
+
+
+Definition at line 198 of file tch.\+h.
+
+\hypertarget{group___a_p_i_ga5daef7eb8faaa43d6a3c136aa0af356d}{\index{A\+P\+I@{A\+P\+I}!start@{start}}
+\index{start@{start}!A\+P\+I@{A\+P\+I}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}tch\+Status($\ast$ \+\_\+tch\+\_\+thread\+\_\+ix\+\_\+t\+::start)(tch\+\_\+thread\+Id thread)}}\label{group___a_p_i_ga5daef7eb8faaa43d6a3c136aa0af356d}
+Start New Thread 
+
+Definition at line 94 of file tch.\+h.
+
+\hypertarget{group___a_p_i_ga4a12ede67ac36e7ce4e521144dd0c773}{\index{A\+P\+I@{A\+P\+I}!wait@{wait}}
+\index{wait@{wait}!A\+P\+I@{A\+P\+I}}
+\subsubsection[{wait}]{\setlength{\rightskip}{0pt plus 5cm}tch\+Status($\ast$ \+\_\+tch\+\_\+condvar\+\_\+ix\+\_\+t\+::wait)(tch\+\_\+condv\+Id condv, tch\+\_\+mtx\+Id lock, uint32\+\_\+t timeout)}}\label{group___a_p_i_ga4a12ede67ac36e7ce4e521144dd0c773}
+
+
+wait on condition variable with unlocking mutex 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em condv} & \\
+\hline
+\mbox{\tt in}  & {\em lock} & \\
+\hline
+\mbox{\tt in}  & {\em timeout} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file tch.\+h.
+

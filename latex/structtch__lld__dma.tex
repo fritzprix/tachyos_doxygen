@@ -1,0 +1,80 @@
+\hypertarget{structtch__lld__dma}{\section{tch\+\_\+lld\+\_\+dma Struct Reference}
+\label{structtch__lld__dma}\index{tch\+\_\+lld\+\_\+dma@{tch\+\_\+lld\+\_\+dma}}
+}
+
+
+D\+M\+A handle object type Interface used to access control of dma H/\+W.  
+
+
+
+
+{\ttfamily \#include $<$tch\+\_\+dma.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{structtch__lld__dma_acd1164e06ba97a863404bba6c8b9130c}{D\+M\+A\+\_\+\+C\+O\+U\+N\+T}
+\begin{DoxyCompactList}\small\item\em Initialize D\+M\+A Configuration. \end{DoxyCompactList}\item 
+void($\ast$ \hyperlink{structtch__lld__dma_a5e96ed20c8ad8154cde020e449e52b34}{init\+Req} )(tch\+\_\+\+Dma\+Req\+Def $\ast$attr, uaddr\+\_\+t maddr, uaddr\+\_\+t paddr, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em open dma stream \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+D\+M\+A handle object type Interface used to access control of dma H/\+W. 
+
+D\+M\+A H\+A\+L Interface D\+M\+A H\+A\+L Interface which is accessible from tch object 
+
+Definition at line 202 of file tch\+\_\+dma.\+h.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{structtch__lld__dma_acd1164e06ba97a863404bba6c8b9130c}{\index{tch\+\_\+lld\+\_\+dma@{tch\+\_\+lld\+\_\+dma}!D\+M\+A\+\_\+\+C\+O\+U\+N\+T@{D\+M\+A\+\_\+\+C\+O\+U\+N\+T}}
+\index{D\+M\+A\+\_\+\+C\+O\+U\+N\+T@{D\+M\+A\+\_\+\+C\+O\+U\+N\+T}!tch\+\_\+lld\+\_\+dma@{tch\+\_\+lld\+\_\+dma}}
+\subsubsection[{D\+M\+A\+\_\+\+C\+O\+U\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t tch\+\_\+lld\+\_\+dma\+::\+D\+M\+A\+\_\+\+C\+O\+U\+N\+T}}\label{structtch__lld__dma_acd1164e06ba97a863404bba6c8b9130c}
+
+
+Initialize D\+M\+A Configuration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cfg} & pointer of tch\+\_\+dma\+\_\+cfg \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+tch\+\_\+dma\+\_\+cfg 
+\end{DoxySeeAlso}
+
+
+Definition at line 208 of file tch\+\_\+dma.\+h.
+
+\hypertarget{structtch__lld__dma_a5e96ed20c8ad8154cde020e449e52b34}{\index{tch\+\_\+lld\+\_\+dma@{tch\+\_\+lld\+\_\+dma}!init\+Req@{init\+Req}}
+\index{init\+Req@{init\+Req}!tch\+\_\+lld\+\_\+dma@{tch\+\_\+lld\+\_\+dma}}
+\subsubsection[{init\+Req}]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ tch\+\_\+lld\+\_\+dma\+::init\+Req)(tch\+\_\+\+Dma\+Req\+Def $\ast$attr, uaddr\+\_\+t maddr, uaddr\+\_\+t paddr, size\+\_\+t size)}}\label{structtch__lld__dma_a5e96ed20c8ad8154cde020e449e52b34}
+
+
+open dma stream 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dma} & dma stream from \hyperlink{group___d_m_a___h_a_l_gafd49af26314c7ee865a91730c5c695c7}{D\+M\+A\+\_\+\+Str0} to \hyperlink{group___d_m_a___h_a_l_ga6df87ce1f4eb51573acbfdbef87cf883}{D\+M\+A\+\_\+\+Str15} \\
+\hline
+{\em cfg} & dma configuration type. tch\+\_\+dma\+\_\+cfg \\
+\hline
+{\em timeout} & any number of time in millisec or \hyperlink{group___a_p_i_ga9eb9a7a797a42e4b55eb171ecc609ddb}{os\+Wait\+Forever} \\
+\hline
+{\em power} & mode option tch\+\_\+pwr\+\_\+def \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+dma handle which allows access dma H/\+W 
+\end{DoxyReturn}
+
+
+Definition at line 219 of file tch\+\_\+dma.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/hal/tch\+\_\+dma.\+h\end{DoxyCompactItemize}
